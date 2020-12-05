@@ -62,7 +62,7 @@ export class TaskComponent implements OnInit {
     this.priority = null
   }
 
-  deleteTask(_id:string): void
+  deleteTask(_id): void
   {
     if(confirm('Are you sure you want to delete this?'))
       this.taskService.deleteTask(_id).subscribe(response =>{
