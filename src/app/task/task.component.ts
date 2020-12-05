@@ -17,7 +17,7 @@ export class TaskComponent implements OnInit {
   name: string;
   complete: boolean;
   priority: number;
-  private showForm: boolean;
+  showForm: boolean;
 
 
   constructor(private taskService: TaskService) {

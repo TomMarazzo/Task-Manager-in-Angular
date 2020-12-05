@@ -31,11 +31,11 @@ export class TaskService {
 
   // DELETE
   deleteTask(_id) {
-    return this.http.delete(globals.apiRoot + 'tasks/' + _id, httpOptions)
+    return this.http.delete(globals.apiRoot + '/tasks' + _id, httpOptions)
   }
 
   // UPDATE
   updateTask(task) {
-    return this.http.put(globals.apiRoot + 'tasks/' + task._id, task, httpOptions)
+    return this.http.put(globals.apiRoot + '/tasks' + task._id, task, httpOptions)
   }
 }
